@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #fffdf7;
+  color: #2c2c2c;
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  z-index: 10;
+  background: #fffdf7;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.title-frame,
+.panel {
+  position: relative;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nav-hit {
+  position: absolute;
+  z-index: 2;
+  top: 60%;
+  height: 34%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-hit:focus-visible {
+  outline: 3px solid #e47a36;
+  outline-offset: -3px;
+}
+
+.nav-about {
+  left: 6%;
+  width: 21%;
+}
+
+.nav-pricing {
+  left: 28%;
+  width: 21%;
+}
+
+.nav-ingredients {
+  left: 50%;
+  width: 21%;
+}
+
+.nav-philosophy {
+  left: 72%;
+  width: 22%;
+}
+
+.panel {
+  display: none;
+}
+
+.panel.active {
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .container {
+    max-width: none;
+  }
+
+  .nav-hit {
+    height: 20%;
+  }
+
+  .nav-about {
+    left: 5%;
+    top: 54%;
+    width: 42%;
+  }
+
+  .nav-pricing {
+    left: 53%;
+    top: 54%;
+    width: 42%;
+  }
+
+  .nav-ingredients {
+    left: 5%;
+    top: 76%;
+    width: 42%;
+  }
+
+  .nav-philosophy {
+    left: 53%;
+    top: 76%;
+    width: 42%;
+  }
+}
