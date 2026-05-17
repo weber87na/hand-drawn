@@ -37,8 +37,8 @@ img {
 .nav-hit {
   position: absolute;
   z-index: 2;
-  top: 60%;
-  height: 34%;
+  top: 74%;
+  height: 17%;
   border: 0;
   padding: 0;
   background: transparent;
@@ -51,23 +51,23 @@ img {
 }
 
 .nav-about {
-  left: 6%;
-  width: 21%;
+  left: 9%;
+  width: 25%;
 }
 
 .nav-pricing {
-  left: 28%;
-  width: 21%;
+  left: 36%;
+  width: 20%;
 }
 
 .nav-ingredients {
-  left: 50%;
-  width: 21%;
+  left: 58%;
+  width: 20%;
 }
 
 .nav-philosophy {
-  left: 72%;
-  width: 22%;
+  left: 79%;
+  width: 19%;
 }
 
 .panel {
@@ -78,36 +78,331 @@ img {
   display: block;
 }
 
+.philosophy-page {
+  min-height: 760px;
+  padding: 38px 34px 46px;
+  background:
+    radial-gradient(circle at 18% 16%, rgba(246, 182, 81, 0.16), transparent 22%),
+    radial-gradient(circle at 82% 18%, rgba(71, 142, 74, 0.14), transparent 24%),
+    repeating-linear-gradient(0deg, rgba(43, 43, 43, 0.025) 0 1px, transparent 1px 22px),
+    #fffdf7;
+  color: #272727;
+  font-family: "Microsoft JhengHei", "Noto Sans TC", Arial, sans-serif;
+}
+
+.pencil-title {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 6px;
+}
+
+.pencil-title::after {
+  content: "";
+  position: absolute;
+  left: 250px;
+  right: 0;
+  bottom: 13px;
+  border-bottom: 3px solid rgba(28, 78, 47, 0.9);
+  transform: rotate(-0.4deg);
+}
+
+.pencil-title p {
+  margin: 0 0 2px;
+  color: #155132;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.pencil-title h1 {
+  margin: 0;
+  color: #111;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-shadow: 0.8px 0.6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.18fr 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.sketch-card,
+.logo-sketch {
+  position: relative;
+  border: 2px solid rgba(33, 33, 33, 0.56);
+  border-radius: 15px 12px 17px 13px;
+  background: rgba(255, 255, 255, 0.42);
+  box-shadow: 2px 3px 0 rgba(29, 29, 29, 0.08);
+}
+
+.sketch-card::before,
+.logo-sketch::before {
+  content: "";
+  position: absolute;
+  inset: 5px -3px -4px 4px;
+  z-index: -1;
+  border: 1px dashed rgba(45, 45, 45, 0.25);
+  border-radius: 18px 13px 16px 12px;
+  transform: rotate(-0.35deg);
+}
+
+.sketch-card {
+  padding: 18px 18px 16px;
+}
+
+.sketch-card h2 {
+  margin: 0 0 12px;
+  color: #171717;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.sketch-card h2 span {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: #155132;
+  color: #fffdf7;
+  font-size: 16px;
+}
+
+.sketch-card p,
+.sketch-card li,
+.logo-sketch p {
+  font-size: 17px;
+  line-height: 1.72;
+  letter-spacing: 0;
+}
+
+.core-quote {
+  margin: 0 0 14px;
+  color: #155132;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.sketch-card ul {
+  margin: 12px 0 0;
+  padding-left: 1.2em;
+}
+
+.sketch-card li::marker {
+  color: #155132;
+}
+
+.brand-core {
+  grid-row: span 2;
+}
+
+.logo-sketch {
+  grid-row: span 2;
+  padding: 12px 22px 20px;
+  text-align: center;
+}
+
+.logo-sketch svg {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.logo-sketch p {
+  margin: 2px auto 0;
+  max-width: 380px;
+  color: #1d1d1d;
+}
+
+.clock-line,
+.bowl {
+  fill: none;
+  stroke: #13512f;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 10;
+}
+
+.clock-line.thin {
+  stroke-width: 7;
+}
+
+.bowl-top {
+  fill: rgba(255, 255, 255, 0.72);
+}
+
+.bowl.inner {
+  stroke-width: 8;
+}
+
+.stripe {
+  stroke-width: 18;
+}
+
+.stripe.red {
+  stroke: #d83b18;
+}
+
+.stripe.orange {
+  stroke: #f39a22;
+}
+
+.stripe.green {
+  stroke: #4f8d3f;
+}
+
+.leaf {
+  fill: rgba(45, 123, 54, 0.92);
+  stroke: #155132;
+  stroke-width: 6;
+}
+
+.leaf-vein {
+  fill: none;
+  stroke: #fffdf7;
+  stroke-linecap: round;
+  stroke-width: 5;
+}
+
+.element-row {
+  border-top: 1px dashed rgba(0, 0, 0, 0.22);
+  padding-top: 10px;
+}
+
+.element-row:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.element-row strong {
+  color: #155132;
+  font-size: 18px;
+}
+
+.element-row p {
+  margin: 3px 0 9px;
+}
+
+.signal-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.signal-list p {
+  margin: 0;
+  padding: 12px 8px;
+  border: 1px solid rgba(21, 81, 50, 0.45);
+  border-radius: 50% 45% 52% 44%;
+  color: #1f1f1f;
+  text-align: center;
+}
+
+.signal-list b,
+.formula {
+  color: #155132;
+}
+
+.positioning {
+  grid-column: span 2;
+}
+
+.formula {
+  margin: 0 0 8px;
+  font-size: 27px;
+  font-weight: 700;
+}
+
 @media (max-width: 720px) {
   .container {
     max-width: none;
   }
 
   .nav-hit {
-    height: 20%;
+    height: 10%;
   }
 
   .nav-about {
-    left: 5%;
-    top: 54%;
+    left: 7%;
+    top: 74%;
     width: 42%;
   }
 
   .nav-pricing {
-    left: 53%;
-    top: 54%;
+    left: 52%;
+    top: 74%;
     width: 42%;
   }
 
   .nav-ingredients {
-    left: 5%;
-    top: 76%;
+    left: 7%;
+    top: 86.5%;
     width: 42%;
   }
 
   .nav-philosophy {
-    left: 53%;
-    top: 76%;
+    left: 52%;
+    top: 86.5%;
     width: 42%;
+  }
+
+  .philosophy-page {
+    min-height: 0;
+    padding: 26px 16px 34px;
+  }
+
+  .pencil-title::after {
+    left: 0;
+    bottom: -8px;
+  }
+
+  .pencil-title p {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .pencil-title h1 {
+    font-size: 38px;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .brand-core,
+  .logo-sketch,
+  .positioning {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .logo-sketch {
+    padding: 8px 14px 18px;
+  }
+
+  .sketch-card p,
+  .sketch-card li,
+  .logo-sketch p {
+    font-size: 16px;
+  }
+
+  .signal-list {
+    grid-template-columns: 1fr;
+  }
+
+  .signal-list p {
+    border-radius: 14px 12px 16px 13px;
+  }
+
+  .formula {
+    font-size: 22px;
   }
 }
