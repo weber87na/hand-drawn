@@ -37,8 +37,8 @@ img {
 .nav-hit {
   position: absolute;
   z-index: 2;
-  top: 74%;
-  height: 17%;
+  top: 81.5%;
+  height: 12.5%;
   border: 0;
   padding: 0;
   background: transparent;
@@ -51,23 +51,23 @@ img {
 }
 
 .nav-about {
-  left: 9%;
-  width: 25%;
+  left: 3.5%;
+  width: 23%;
 }
 
 .nav-pricing {
-  left: 36%;
-  width: 20%;
+  left: 28%;
+  width: 21%;
 }
 
 .nav-ingredients {
-  left: 58%;
-  width: 20%;
+  left: 50.5%;
+  width: 22%;
 }
 
 .nav-philosophy {
-  left: 79%;
-  width: 19%;
+  left: 74.5%;
+  width: 22%;
 }
 
 .panel {
@@ -326,31 +326,31 @@ img {
   }
 
   .nav-hit {
-    height: 10%;
+    height: 10.5%;
   }
 
   .nav-about {
-    left: 7%;
-    top: 74%;
-    width: 42%;
+    left: 4%;
+    top: 72.5%;
+    width: 44%;
   }
 
   .nav-pricing {
-    left: 52%;
-    top: 74%;
-    width: 42%;
+    left: 51%;
+    top: 72.5%;
+    width: 45%;
   }
 
   .nav-ingredients {
-    left: 7%;
-    top: 86.5%;
-    width: 42%;
+    left: 4%;
+    top: 85.5%;
+    width: 44%;
   }
 
   .nav-philosophy {
-    left: 52%;
-    top: 86.5%;
-    width: 42%;
+    left: 51%;
+    top: 85.5%;
+    width: 45%;
   }
 
   .philosophy-page {
